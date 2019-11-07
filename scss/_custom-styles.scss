@@ -1,0 +1,23 @@
+#four-o-four {
+  text-align: center;
+  height: 100vh;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+  }
+
+  h1 {
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-size: 60px;
+  }
+
+  a {
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+}

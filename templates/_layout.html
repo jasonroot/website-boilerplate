@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="utf-8">
+
+    {% block head %}
+    <title>{{ pageTitle }}</title>
+    <meta property="og:title" content="{{ pageTitle }}">
+    <meta name="description" content="{{ pageMeta }}">
+    <meta property="og:url" content="{{ pageURL }}">
+    <meta property="og:site_name" content="{{ pageTitle }}">
+    <meta property="og:description" content="{{ pageMeta }}">
+    <meta property="og:image" content="{{ pageImg }}">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name=”robots” content=”noindex, nofollow”>
+    {% endblock %}
+
+    <!-- favicon -->
+    <link rel="icon" href="/img/icon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/icon.png">
+
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- Typekit -->
+
+  </head>
+
+<body id="page-top">
+
+  {% include "parts/_header.html" %}
+
+  {% block content %} {% endblock %}
+
+  {% include "parts/_footer.html" %}
+
+
+  <!-- javascript files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+
+</body>
+</html>
